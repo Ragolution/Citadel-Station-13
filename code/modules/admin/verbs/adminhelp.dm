@@ -371,8 +371,7 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 		return
 
 	var/msg = "<font color='red' size='4'><b>- AdminHelp marked as IC issue by [usr?.client?.holder?.fakekey? usr.client.holder.fakekey : "an administrator"]! -</b></font><br>"
-	msg += "<font color='red'><b>Losing is part of the game!</b></font><br>"
-	msg += "<font color='red'>It is also possible that your ahelp is unable to be answered properly, due to events occurring in the round.</font>"
+	msg += "<font color='red'>Your ticket has been resolved and judged an 'IC Issue'. You (or others) have ben left to deal with this issue, on your own, as the actions are otherwise validated by In Character actions within the round, an ongoing event, player's antagonist status or other extenuating circumstance.</font>"
 	if(initiator)
 		to_chat(initiator, msg)
 
